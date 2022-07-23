@@ -11,15 +11,29 @@ html,body{
 
 .nav{
     position: fixed;
-    position: relative;
+    top: 0;
+    z-index:3;
+    min-width: 100%;
+    height: auto;
     background-color:#223d59;
-    width:100%;
-    height:auto;
 }
 
 .h2-nav{
     color: white;
     margin:1.5rem 1rem 1rem;
+}
+
+.nav button {
+    display: none;
+    font-size:16px;
+    gap:5px;
+    color: white;
+    background-color: #1abc9c;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 5.4rem;
+    height: 3rem;
 }
 
 .h2-nav h2{
@@ -28,19 +42,21 @@ html,body{
 }
 
 .main-img{
-    position: absolute;
+    position:absolute;
+    display:flex;
+    align-items: center;
     background-color:#1abc9c;
-    width: 100%;
+    min-width: 102%;
     height:83%;
 }
 
 
-img{
+.main-img img{
     width:100%;
     position: relative;
-    top:6rem;
-    text-align: center;
-    width: 250px;
+    top:-7.5rem;
+    margin-left:18%;
+    margin-right:18%;
 }
 
 .wrapper h1,.star{
@@ -65,6 +81,7 @@ img{
 
 .line{
     position:relative;
+    border-radius:3px;
     background-color: white;
     width: 3.5em;
     height: 4px;
@@ -115,6 +132,7 @@ img{
 
 .wrapper-2 .line{
     position:relative;
+    border-radius:3px;
     background-color:#223d59;
     width: 3.5em;
     height: 4px;
@@ -123,6 +141,7 @@ img{
 
 .imges{
     position:relative;
+    top: 5.5rem;
 }
 
 
@@ -138,11 +157,11 @@ img{
 
 .footer{
     position: relative;
-    top:165rem;
+    top:180rem;
     text-align: center;
     background-color:#1abc9c;
-    width: 100%;
-    height: 44rem;
+    min-width: 102%;
+    height: 48rem;
 }
 
 
@@ -151,4 +170,195 @@ img{
     font-size:40px;
     position: relative;
     top:6rem;
+}
+
+
+.footer .star{
+    position: relative;
+    top:6rem;
+}
+
+.footer p{
+    display: flex;
+    text-align: start;
+    position: relative;
+    top: 7rem;
+    color: white;
+    font-size:1.25rem;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 16px;
+}
+
+
+.footer-button{
+    position: relative;
+    background-color: transparent;
+    top: 10rem;
+}
+
+.footer-button button {
+    width: 230px;
+    height: 70px;
+    font-size: 22px;
+    border: 2px solid white;
+    border-radius: 11px;
+}
+
+.form-1{
+    position: relative;
+    top: 180rem;
+    background-color:white;
+    width: 100%;
+    height: 55rem;
+
+}
+
+.form-1 h2{
+    font-size:2.5rem;
+    font-weight:650;
+}
+
+.title-form{
+    color: #223d59;
+    position: relative;
+    top:5.5em;
+    text-align: center;
+}
+
+
+.form-1 .star{
+    color: #223d59;
+    position: relative;
+    top: 5.5rem;
+
+
+}
+
+.form-1 .line{
+    background-color: #223d59;
+    border-radius:3px;
+    position:relative;
+    width: 3.5em;
+    height: 4px;
+}
+
+
+.form-group{
+    position: absolute;
+    top: 6.5rem;
+    left:-30px;
+
+}
+
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    font-size: 25px;
+    width:23rem;
+    height:4.5rem;
+    margin-bottom: 2rem;
+}
+
+input:hover{
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+
+
+ textarea {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    font-size:25px;
+    width:23rem;
+    height:7rem;
+}
+
+.form-group textarea:hover {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+
+.form-group button {
+    background-color:#1abc9c;
+    margin-top:1rem;
+    display: flex;
+    align-items:start;
+    font-size: 1.4rem;
+    padding-top: 15px;
+    padding-left: 25px;
+    width: 6.5rem;
+    height:4.2rem ;
+}
+
+
+.explains{
+    position: absolute;
+    top: 46rem;
+    background-color: #223d59;
+    min-width: 130% !important;
+    height: 44rem;
+}
+
+.explains h3,h5,h4{
+    position: relative;
+    top:5rem;
+    color: white;
+}
+
+.explains h5{
+    position:relative;
+    margin-top: 2.5rem !important;
+    margin: 4rem;
+    font-size:20px;
+    font-weight: 200;
+}
+
+.font-w-700{
+    font-weight: 700;
+}
+
+.explains button {
+    position:relative;
+    top: 6rem;
+    background-color:transparent;
+    color: rgb(226, 226, 226);
+    border:none;
+    border: 2px solid rgb(226, 226, 226);
+    border-radius:2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
+
+.h5-end{
+    font-size: 1.3rem !important;
+    margin:1.5rem !important;
+    font-weight: 450 !important;
+}
+
+.link-bootstrap{
+    color: #1abc9c;
+}
+
+
+.end{
+    position:absolute;
+    bottom: 0%;
+    margin-bottom: 0%;
+    padding: 25px;
+    width: 102%;
+    height: auto;
+    background-color: #1e2c38;
+    color: white;
 }
