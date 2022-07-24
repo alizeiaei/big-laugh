@@ -13,18 +13,39 @@ html,body{
     position: fixed;
     top: 0;
     z-index:3;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     background-color:#223d59;
 }
 
-.h2-nav{
+.nav button {
+    color: white;
+    background-color: #1abc9c;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 5.5rem;
+    height:3rem;
+    border-radius:10px;
+    border: transparent;
+    font-size: 15px;
+
+}
+
+.nav button:hover {
+    border: 4px solid white;
+    transition: 0.1s ease-in-out;
+}
+
+
+.h3-nav{
     color: white;
     margin:1.5rem 1rem 1rem;
 }
 
 
 .container {
+    display: none;
     position:relative;
     max-width: 100% !important;
     height: 48.5rem;
@@ -71,6 +92,7 @@ html,body{
     font-weight: 700;
 }
 .star{
+    display: none;
     font-size: 32px;
     display: flex;
     align-items: center;
@@ -82,6 +104,7 @@ html,body{
 
 
 .line{
+    display: none;
     position:relative;
     border-radius:3px;
     background-color: white;
@@ -90,6 +113,7 @@ html,body{
 }
 
 .container p{
+    display: none;
     color: white;
     position: relative;
     top: 30.5rem;
@@ -101,6 +125,7 @@ html,body{
 
 
 .main-2{
+    display: none;
     position: absolute;
     top:91%;
     background-color:white;
@@ -110,6 +135,7 @@ html,body{
 
 
 .main-2 h1{
+    display: none;
     position: relative;
     text-align: center;
     top:6rem;
@@ -119,6 +145,7 @@ html,body{
 }
 
 .main-2 .star{
+    display: none;
     position:relative;
     top:6rem;
     color:#223d59;
@@ -133,6 +160,7 @@ html,body{
 
 
 .main-2 .line{
+    display: none;
     position:relative;
     border-radius:3px;
     background-color:#223d59;
@@ -142,12 +170,14 @@ html,body{
 
 
 .imges{
+    display: none;
     position:relative;
     top: 5.5rem;
 }
 
 
 .imges img{
+    display: none;
     position:relative;
     margin-top:20px;
     margin-bottom:20px;
@@ -158,6 +188,7 @@ html,body{
 }
 
 .footer{
+    display: none;
     position: relative;
     top:133rem;
     text-align: center;
@@ -168,6 +199,7 @@ html,body{
 
 
 .footer h2 {
+    display: none;
     color: white;
     font-size:40px;
     position: relative;
@@ -176,6 +208,7 @@ html,body{
 
 
 .footer .star{
+    display: none;
     position: relative;
     top:6rem;
 }
@@ -211,28 +244,34 @@ html,body{
 }
 
 .form-1 {
+    display: none;
     position:relative;
     top: 20rem;
     height: auto;
 }
 
 .form-1 h2 {
+    display: none;
     text-align: center;
     color: #1e2c38;
 }
 
 .form-1 .star {
+    display: none;
     color: #1e2c38;
     text-align: center;
     left: 5px;
 }
 
 .form-1 .line {
+    display: none;
+
     background-color: #1e2c38;
 }
 
 
 .form-group{
+    display: none;
     position: absolute;
     top:5rem;
     text-align: start;
@@ -337,3 +376,101 @@ html,body{
     background-color: #1e2c38;
     color: white;
 }
+
+
+@media screen and (min-width:800px) {
+
+    .container {
+        height: 45.5rem;
+    }
+    .container img{
+        position: absolute;
+        left: 18rem;
+        text-align: center;
+    }
+
+    .container .star{
+        margin-left:15rem;
+        margin-right: 15rem;
+    }
+
+    .main-2{
+        position: relative;
+        top: 15px;
+    }
+
+    .main-2 .star {
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+
+    .imges{
+        margin: 30px;
+        display:flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .imges .group-img-1{
+        display: flex;
+        width:23rem;
+        column-gap: 30px;
+    }
+
+    .imges .group-img-2{
+        display: flex;
+        width:23rem;
+        column-gap: 30px;
+    }
+    .imges .group-img-3{
+        display: flex;
+        width:23rem;
+        column-gap: 30px;
+    }
+    .footer{
+        position: relative;
+        top:29rem;
+        height: 42rem;
+    }
+
+    .form-1 {
+        position:relative;
+        top: 15rem;
+        }
+
+    .form-group input{
+        position: relative;
+        top: 10rem;
+        width: 85%;
+        margin-left: 5rem;
+    }
+
+    .form-group textarea{
+        position: relative;
+        top: 10rem;
+        width:85%;
+        margin-left: 5rem ;
+    }
+
+    .form-group button {
+        position: relative;
+        top:11rem;
+        margin-left:5rem;
+    }
+
+    .star {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .footer p {
+        margin-left: 5rem;
+        margin-right: 3rem;
+    }
+
+    .explains h5 {
+        margin-left: 17rem;
+        margin-right: 17rem;
+    }
+
+    }
