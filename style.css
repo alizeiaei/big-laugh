@@ -139,6 +139,10 @@ html,body {
     border-radius: 10px;
 }
 
+.images a:hover {
+    cursor: pointer;
+}
+
 .explains {
     position: relative;
     top:20rem;
