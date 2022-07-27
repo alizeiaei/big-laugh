@@ -14,10 +14,17 @@
     <nav>
         <div class="navbar">
             <h4 class="f-weight-700">START BOOTSTRAP</h4>
-            <button>
+            <button type="button" class="btn btn-outline-light">
                 MENU
                 <i class="fas fa-bars"></i>
             </button>
+            <div class="computer-navbar">
+            <ul>
+                <li class="f-weight-700"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="f-weight-700"><a href="#about">ABOUT</a></li>
+                <li class="f-weight-700"><a href="#contact-me">CONTACT</a></li>
+            </ul>
+            </div>
         </div>
     </nav>
     <main>
@@ -38,7 +45,7 @@
                 <i class="fa-solid fa-star"></i>
                 <div class="line"></div>
             </div>
-            <div class="images">
+            <div class="images" id="portfolio">
                 <img src="assets/cabin.png" alt="...">
                 <img src="assets/cake.png" alt="...">
                 <img src="assets/circus.png" alt="...">
@@ -46,19 +53,22 @@
                 <img src="assets/safe.png" alt="...">
                 <img src="assets/submarine.png" alt="...">
             </div>
-            <div class="explains">
+            <div class="explains" id="about">
                 <h3 class="f-weight-700">ABOUT</h3>
                 <div class="star">
                     <div class="line"></div>
                     <i class="fa-solid fa-star"></i>
                     <div class="line"></div>
                 </div>
+                <div class="explains-p">
                 <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-
+                </div>
+                <div class="explains-p-2">
                 </p><p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
                 <button type="button" class="btn btn-light"><i class="fa-solid fa-download"></i> Free download</button>
-                <div class="form-group">
-                    <h3 class="f-weight-700">CONTACT ME!</h3>
+                <div class="form-group" id="contact-me" >
+                    <h3 class="f-weight-700" >CONTACT ME!</h3>
                     <div class="star">
                         <div class="line"></div>
                         <i class="fa-solid fa-star"></i>
@@ -69,14 +79,17 @@
                         <input type="email" placeholder="Email address">
                         <input type="number" placeholder="Phone number">
                         <textarea placeholder="Message"></textarea>
-                        <button type="button" class="form-btn btn btn-success" disabled>Send</button>
+                        <button class="form-btn btn btn-success" disabled>Send</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="footer">
+            <div class="footer-1">
             <h3 class="f-weight-700">LOCATION</h3>
             <h5>2215 John Daniel Drive Clark, MO 65243</h5>
+        </div>
+        <div class="footer-2">
             <h2 class="f-weight-700">ABOUT THE WEB</h2>
             <div class="footer-btn">
             <button class="btn btn-light"><i class="fa-brands fa-facebook-f"></i></button>
@@ -84,8 +97,11 @@
             <button class="btn btn-light"><i class="fa-brands fa-linkedin-in"></i></button>
             <button class="btn btn-light"><i class="fa-solid fa-basketball"></i></button>
         </div>
+    </div>
+    <div class="footer-3">
         <h2 class="f-weight-700">ABOUT FREELANCER</h2>
         <h5 class="h5">Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="https://startbootstrap.com/">start bootstrap</a>.</h5>
+    </div>
         <div class="end-footer">
             <h6>Copyright © Your Website 2022</h6>
         </div>

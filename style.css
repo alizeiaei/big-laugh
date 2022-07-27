@@ -34,6 +34,11 @@ html,body {
     height: 2.5rem;
 }
 
+.computer-navbar {
+    display: none;
+}
+
+
 .f-weight-700{
     font-weight: 700;
 }
@@ -353,5 +358,234 @@ html,body {
     top: 2.5rem;
 }
 
+@media screen and (min-width:750px) {
+    .navbar h4 {
+        position: relative;
+        font-size: 19px;
+        top: 0.5rem;
+        left: 5rem;
+    }
 
 
+
+    .navbar button {
+       position: relative;
+       right: 2.5rem;
+    }
+
+    .container{
+        margin: 0%;
+        min-width:100%;
+    }
+
+    .container img {
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+
+    .container .star {
+        display: flex;
+        justify-content: center;
+        column-gap: 20px
+    }
+
+    .container-2 .star {
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+
+    .images img {
+        width: 22rem;
+        position: relative;
+        left: 10px;
+    }
+
+    .explains {
+        padding: 3rem;
+    }
+
+    .explains button {
+        position: relative;
+        top: 13rem;
+        left: 15rem;
+    }
+
+    .form-group {
+        position:relative;
+        top: 25rem;
+    }
+
+    .footer {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .footer .h5 {
+        margin-left: -7rem;
+        margin-right: -7rem;
+    }
+}
+
+
+@media screen and (min-width:800px) {
+    .images {
+        margin-left:2.1rem;
+    }
+}
+
+
+@media screen and (min-width:900px) {
+    .images img {
+        position: relative;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .navbar h4 {
+        font-size: 29px;
+        margin-bottom: 1.4rem;
+        padding-top: 0.8rem;
+        position: relative;
+        left: 6rem;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .computer-navbar {
+        display: flex;
+    }
+
+    .computer-navbar a {
+        color:white;
+        text-decoration: none;
+    }
+    .computer-navbar li {
+        display: inline;
+        font-size: 17px;
+        position: relative;
+        top: 0.5rem;
+        right: 3rem;
+        margin-right: 3rem;
+    }
+
+    .computer-navbar a:hover {
+        color: #1abc9c;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .container img {
+        width: 15rem;
+        position: relative;
+        left: 23rem;
+    }
+    .container h2 {
+        font-size: 70px;
+    }
+
+    .container-2 h3 {
+        font-size: 50px;
+    }
+
+    .container-2 .line {
+        height: 0.2rem;
+    }
+
+    .container-2 .images {
+        margin-left: 6rem;
+        position: relative;
+    }
+    
+    .container-2 img {
+        width: 24rem;
+    }
+
+    .explains-p  {
+        position: absolute;
+        left: 20rem;
+        display: inline;
+        width: 30%;
+    }
+
+    .explains-p-2 {
+        position: absolute;
+        left: 48rem;
+        width: 30%;
+    }
+
+    .explains button {
+        position: relative;
+        top: 25rem;
+        left: 37rem;
+    }
+
+    .form-group {
+        position: relative;
+        top: 35rem;
+        height: 60rem;
+    }
+
+    .form-group input {
+        position: relative;
+        height: 3rem;
+        font-size: 22px;
+        left: 20rem;
+        width: 50rem;
+    }
+
+    .form-group textarea {
+        position: relative;
+        height: 8rem;
+        font-size: 22px;
+        left: 20rem;
+        width: 50rem;
+    }
+    
+    .form-group button {
+        position: relative;
+        top: 16rem;
+        left: -30rem !important;
+    }
+
+    .footer {
+        height: 22rem;
+    }
+
+    .footer-1 {
+        position: absolute;
+        top: 1rem;
+        left: 5rem;
+    }
+
+    .footer-1 h5 {
+        width: 15rem;
+        margin-top: -1rem;
+    }
+    .footer-2 {
+        position: absolute;
+        top: 2rem;
+        left: 33rem;
+    }
+
+    .footer-2 button {
+        margin-left: 15px;
+    }
+
+    .footer-3 {
+        position: absolute;
+        left: 65rem;
+        top: 2rem;
+    }
+    .footer-3 h5 {
+        width: 25rem;
+        left: 5rem;
+    }
+    .end-footer {
+        height: 5rem;
+    }
+}
